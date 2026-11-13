@@ -1,0 +1,127 @@
+{
+ "v": 1,
+ "status": "ok",
+ "limits": {
+  "maxEntries": 64,
+  "jsonMax": 524288,
+  "logMax": 1048576,
+  "textMax": 4096,
+  "totalMax": 4194304,
+  "reportMax": 262144
+ },
+ "accepted": [
+  {
+   "name": "container.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "docker-version.txt",
+   "bytes": 37,
+   "sha256": "1798492bf534ca1048cd5e8ce744dc0bb9601c944a12372ca688be47cbff0949",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "node-image-digest.txt",
+   "bytes": 77,
+   "sha256": "77a184a24ed87f6ad5d3c28b46365e88d05fd0df450c6f55e2ebfc7ae4b097b8",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "node-image.txt",
+   "bytes": 22,
+   "sha256": "04c09ec1699f1a45a97b1622481ee12deb4ba4958da81bb14954d9b50c276eb9",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "probe-admission.json",
+   "bytes": 128,
+   "sha256": "b2635d175acfa1e0e3a2dbd35dd35bb879ee0a1ee58f98b9dc05531e5a3044d3",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "probe-container.log",
+   "bytes": 28,
+   "sha256": "1f95a13c9aa637668370c468fddb78c20907d09e5f5d49ff6adf00a38a98d968",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "sandbox-probe.json",
+   "bytes": 5659,
+   "sha256": "1205ebfaca6eaf5d9ad439f12e6d29d3f86b65bda6ae1b0cc5c74b1f811d02cd",
+   "truncated": false,
+   "source": "meta"
+  },
+  {
+   "name": "baseline-passing-tests.json",
+   "bytes": 2,
+   "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "historical-mocha-json-1.log",
+   "bytes": 96,
+   "sha256": "775661506b8cce2831a9d094ea1e30e943303caa9d57cd5adab76fa14a93a774",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "historical-mocha-json-2.log",
+   "bytes": 96,
+   "sha256": "775661506b8cce2831a9d094ea1e30e943303caa9d57cd5adab76fa14a93a774",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "historical-test-1.log",
+   "bytes": 592,
+   "sha256": "79b710bcc7055fcdd674e01ae62610f4341337c1b5b7be2c423a5e38cd04bdf8",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "historical-test-2.log",
+   "bytes": 592,
+   "sha256": "b3735adf2649f15d0cc4d05580043b88078e31f5398d0f5c4e2cf79d3741f24c",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "historical.json",
+   "bytes": 2282,
+   "sha256": "217c4bc586b2eb8e71cafd6595d36eecfafc1bd3b2830bd6ce82b600d699d6b3",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "install-asof.log",
+   "bytes": 174,
+   "sha256": "c49ae560e9ffe361149aafd808a86608d3751617dae508e26533786920f73124",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "today-install.log",
+   "bytes": 137,
+   "sha256": "f894b3eef541bb93ff083ede30c8a1f4822e5b2433eca415d9ea7ddffb574dd2",
+   "truncated": false,
+   "source": "out"
+  },
+  {
+   "name": "today-test.log",
+   "bytes": 592,
+   "sha256": "4486b9d993ade6d95026fd946b952cdad361e9c971940f3b93f93e68f61d93d2",
+   "truncated": false,
+   "source": "out"
+  }
+ ],
+ "rejected": []
+}

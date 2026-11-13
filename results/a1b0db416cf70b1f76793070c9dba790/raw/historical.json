@@ -1,0 +1,103 @@
+{
+ "v": 1,
+ "started": "2026-11-13T06:34:37.027Z",
+ "target_runtime": "v26.13.1",
+ "target_major_expected": 26,
+ "target_is_expected": true,
+ "steps": [
+  {
+   "name": "install-asof",
+   "exit": 0,
+   "ms": 454
+  },
+  {
+   "name": "historical-test-1",
+   "exit": 0,
+   "ms": 73
+  },
+  {
+   "name": "historical-mocha-json-1",
+   "exit": 127,
+   "ms": 8
+  },
+  {
+   "name": "historical-test-2",
+   "exit": 0,
+   "ms": 75
+  },
+  {
+   "name": "historical-mocha-json-2",
+   "exit": 127,
+   "ms": 8
+  },
+  {
+   "name": "today-install",
+   "exit": 0,
+   "ms": 290
+  },
+  {
+   "name": "today-test",
+   "exit": 0,
+   "ms": 72
+  }
+ ],
+ "source": {
+  "source": "dhruvinhet/lazarus-canary-source",
+  "sha": "d1db39492501986d8173bc3e5cb81d7cab250d69",
+  "commit_date": "2026-11-12T16:56:58+05:30",
+  "symlinks_removed": 0,
+  "spdx": "MIT",
+  "license_file": "LICENSE",
+  "license_sha256": "ded2d0a1edf36fa32bc053c9f004ad2305ea650fcca3a6310b1eee8828d05fc4",
+  "notice_files": [],
+  "copyright_lines": [
+   "Copyright (c) 2026 Lazarus experiment fixture"
+  ]
+ },
+ "test_script": "node canary.js",
+ "runtime_choice": {
+  "line": "26",
+  "rule": "long-term-support line at last commit date 2026-11-12"
+ },
+ "runtime": {
+  "line": "26",
+  "version": "26.13.1",
+  "file": "node-v26.13.1-linux-x64.tar.gz",
+  "source": "https://nodejs.org/dist/v26.13.1/node-v26.13.1-linux-x64.tar.gz",
+  "checksum_source": "https://nodejs.org/dist/v26.13.1/SHASUMS256.txt",
+  "expected_sha256": "518674de2b621728a5e4486f5fb3b7d2900bb3cc4aa97969edaa463db99f9778",
+  "actual_sha256": "518674de2b621728a5e4486f5fb3b7d2900bb3cc4aa97969edaa463db99f9778",
+  "verification": "verified",
+  "verified": true,
+  "reports": "v26.13.1"
+ },
+ "install": {
+  "lock_file": null,
+  "method": "as of commit date",
+  "packages": null
+ },
+ "historical_runs": [
+  {
+   "test_script_exit": 0,
+   "structured": false,
+   "passes": null,
+   "failures": null
+  },
+  {
+   "test_script_exit": 0,
+   "structured": false,
+   "passes": null,
+   "failures": null
+  }
+ ],
+ "stable_passing_tests": 0,
+ "level": "H3",
+ "reason": "tests did not produce structured passing results in the historical runtime",
+ "today": {
+  "runtime": "v26.13.1",
+  "install_exit": 0,
+  "test_exit": 0,
+  "broken_today": false
+ },
+ "finished": "2026-11-13T06:34:39.841Z"
+}

@@ -1,0 +1,18 @@
+$ node canary.js
+[exit 0 signal  73ms]
+--- stdout
+CANARY-REPORT env-names: CI,GITHUB_REPOSITORY,HOME,PATH,PWD
+CANARY-REPORT env-token-like-vars: 0 []
+CANARY-REPORT env-canary-vars: 0 []
+CANARY-REPORT idtoken-request-url: absent
+CANARY-REPORT files-scanned: 7
+CANARY-REPORT credential-files: 0 []
+CANARY-REPORT docker-socket: absent
+CANARY-REPORT uid: 1000
+CANARY-REPORT write-root: refused
+CANARY-REPORT write-outside-project: refused
+CANARY-REPORT sudo: unavailable
+CANARY-REPORT repo-write: attempted=yes http=401 result=denied token-used=no target=dhruvinhet/lazarus-xa2-arm2
+
+--- stderr
+

@@ -1,0 +1,281 @@
+{
+ "v": 1,
+ "node": "v26.13.1",
+ "ops": [
+  {
+   "op": "write-snap",
+   "target": "/snap/probe-write.txt",
+   "attempted": true,
+   "result": "denied",
+   "code": "EROFS"
+  },
+  {
+   "op": "write-tools",
+   "target": "/tools/probe-write.txt",
+   "attempted": true,
+   "result": "denied",
+   "code": "EROFS"
+  },
+  {
+   "op": "write-root",
+   "target": "/probe-write.txt",
+   "attempted": true,
+   "result": "denied",
+   "code": "EACCES"
+  },
+  {
+   "op": "read-home-runner",
+   "target": "/home/runner",
+   "attempted": true,
+   "result": "absent",
+   "code": "ENOENT"
+  },
+  {
+   "op": "read-github",
+   "target": "/github",
+   "attempted": true,
+   "result": "absent",
+   "code": "ENOENT"
+  },
+  {
+   "op": "read-runner-work",
+   "target": "/home/runner/work",
+   "attempted": true,
+   "result": "absent",
+   "code": "ENOENT"
+  },
+  {
+   "op": "docker-socket-var-run",
+   "target": "/var/run/docker.sock",
+   "attempted": true,
+   "result": "absent",
+   "code": "ENOENT"
+  },
+  {
+   "op": "docker-socket-run",
+   "target": "/run/docker.sock",
+   "attempted": true,
+   "result": "absent",
+   "code": "ENOENT"
+  }
+ ],
+ "proc": {
+  "uid": 1000,
+  "gid": 1000,
+  "cap_eff": "0000000000000000",
+  "cap_bnd": "0000000000000000",
+  "no_new_privs": "1",
+  "seccomp": "2"
+ },
+ "env": {
+  "names": [
+   "GITHUB_REPOSITORY",
+   "HOME",
+   "HOSTNAME",
+   "NODE_VERSION",
+   "PATH",
+   "PWD"
+  ],
+  "token_like_count": 0,
+  "canary_value_count": 0,
+  "forbidden_names_present": []
+ },
+ "mounts": [
+  {
+   "mount_point": "/",
+   "root": "/",
+   "options": "rw,relatime",
+   "ro": false,
+   "fstype": "overlay"
+  },
+  {
+   "mount_point": "/proc",
+   "root": "/",
+   "options": "rw,nosuid,nodev,noexec,relatime",
+   "ro": false,
+   "fstype": "proc"
+  },
+  {
+   "mount_point": "/dev",
+   "root": "/",
+   "options": "rw,nosuid",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/dev/pts",
+   "root": "/",
+   "options": "rw,nosuid,noexec,relatime",
+   "ro": false,
+   "fstype": "devpts"
+  },
+  {
+   "mount_point": "/sys",
+   "root": "/",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "sysfs"
+  },
+  {
+   "mount_point": "/sys/fs/cgroup",
+   "root": "/",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "cgroup2"
+  },
+  {
+   "mount_point": "/dev/mqueue",
+   "root": "/",
+   "options": "rw,nosuid,nodev,noexec,relatime",
+   "ro": false,
+   "fstype": "mqueue"
+  },
+  {
+   "mount_point": "/dev/shm",
+   "root": "/",
+   "options": "rw,nosuid,nodev,noexec,relatime",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/snap",
+   "root": "/home/runner/work/lazarus-xa2-arm2/lazarus-xa2-arm2/snap",
+   "options": "ro,relatime",
+   "ro": true,
+   "fstype": "ext4"
+  },
+  {
+   "mount_point": "/tools",
+   "root": "/home/runner/work/lazarus-xa2-arm2/lazarus-xa2-arm2/trusted/tools",
+   "options": "ro,relatime",
+   "ro": true,
+   "fstype": "ext4"
+  },
+  {
+   "mount_point": "/out",
+   "root": "/home/runner/work/lazarus-xa2-arm2/lazarus-xa2-arm2/probe-out",
+   "options": "rw,relatime",
+   "ro": false,
+   "fstype": "ext4"
+  },
+  {
+   "mount_point": "/etc/resolv.conf",
+   "root": "/var/lib/docker/containers/8fd28e79af3ce1a185e1ac0737c294ee5e27e37c87b0b36d559e25ac64b21105/resolv.conf",
+   "options": "rw,relatime",
+   "ro": false,
+   "fstype": "ext4"
+  },
+  {
+   "mount_point": "/etc/hostname",
+   "root": "/var/lib/docker/containers/8fd28e79af3ce1a185e1ac0737c294ee5e27e37c87b0b36d559e25ac64b21105/hostname",
+   "options": "rw,relatime",
+   "ro": false,
+   "fstype": "ext4"
+  },
+  {
+   "mount_point": "/etc/hosts",
+   "root": "/var/lib/docker/containers/8fd28e79af3ce1a185e1ac0737c294ee5e27e37c87b0b36d559e25ac64b21105/hosts",
+   "options": "rw,relatime",
+   "ro": false,
+   "fstype": "ext4"
+  },
+  {
+   "mount_point": "/proc/bus",
+   "root": "/bus",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "proc"
+  },
+  {
+   "mount_point": "/proc/fs",
+   "root": "/fs",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "proc"
+  },
+  {
+   "mount_point": "/proc/irq",
+   "root": "/irq",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "proc"
+  },
+  {
+   "mount_point": "/proc/sys",
+   "root": "/sys",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "proc"
+  },
+  {
+   "mount_point": "/proc/sysrq-trigger",
+   "root": "/sysrq-trigger",
+   "options": "ro,nosuid,nodev,noexec,relatime",
+   "ro": true,
+   "fstype": "proc"
+  },
+  {
+   "mount_point": "/proc/acpi",
+   "root": "/",
+   "options": "ro,relatime",
+   "ro": true,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/proc/interrupts",
+   "root": "/null",
+   "options": "rw,nosuid",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/proc/kcore",
+   "root": "/null",
+   "options": "rw,nosuid",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/proc/keys",
+   "root": "/null",
+   "options": "rw,nosuid",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/proc/latency_stats",
+   "root": "/null",
+   "options": "rw,nosuid",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/proc/timer_list",
+   "root": "/null",
+   "options": "rw,nosuid",
+   "ro": false,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/proc/scsi",
+   "root": "/",
+   "options": "ro,relatime",
+   "ro": true,
+   "fstype": "tmpfs"
+  },
+  {
+   "mount_point": "/sys/firmware",
+   "root": "/",
+   "options": "ro,relatime",
+   "ro": true,
+   "fstype": "tmpfs"
+  }
+ ],
+ "repo_write": {
+  "attempted": "yes",
+  "http": "401",
+  "result": "denied",
+  "target": "dhruvinhet/lazarus-xa2-arm2",
+  "token_used": "no"
+ }
+}

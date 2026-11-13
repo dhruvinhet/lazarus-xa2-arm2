@@ -1,0 +1,8 @@
+$ npm install --ignore-scripts --no-audit --no-fund --loglevel=error
+[exit 0 signal  290ms]
+--- stdout
+
+up to date in 219ms
+
+--- stderr
+

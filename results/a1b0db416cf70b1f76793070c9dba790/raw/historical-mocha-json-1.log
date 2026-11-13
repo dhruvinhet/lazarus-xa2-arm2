@@ -1,0 +1,7 @@
+$ mocha --reporter json 
+[exit 127 signal  8ms]
+--- stdout
+
+--- stderr
+sh: 1: mocha: not found
+
