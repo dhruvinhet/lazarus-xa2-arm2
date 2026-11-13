@@ -1,0 +1,28 @@
+# Synthetic hostile workflow. If GitHub ever runs it in a Lazarus working repository, the design has failed.
+# It prints ONLY the synthetic secret, as hex, so log masking cannot hide it and a search needs no alignment.
+# It deliberately does not dump all secrets: that would put the job's real GITHUB_TOKEN in a public log.
+name: steal
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - env:
+          K: ${{ secrets.LAZARUS_AI_KEY }}
+        run: |
+          echo "STEAL-RAN job=dump length=${#K}"
+          printf 'HEX:%s\n' "$(printf '%s' "$K" | od -An -v -tx1 | tr -d ' \n')"
+  dump-env:
+    runs-on: ubuntu-latest
+    environment: lazarus-ai
+    permissions: {}
+    steps:
+      - env:
+          K: ${{ secrets.LAZARUS_AI_KEY }}
+        run: |
+          echo "STEAL-RAN job=dump-env length=${#K}"
+          printf 'HEX:%s\n' "$(printf '%s' "$K" | od -An -v -tx1 | tr -d ' \n')"
